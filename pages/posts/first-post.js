@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Head from "next/head";
 import Script from "next/script";
 import Layout from "../components/layout";
 
@@ -7,9 +6,6 @@ export default function FirstPost() {
   return (
     <>
       <Layout>
-        <Head>
-          <title>First Post</title>
-        </Head>
         <Script
           src="https://connect.facebook.net/en_US/sdk.js"
           strategy="lazyOnload"
@@ -19,9 +15,9 @@ export default function FirstPost() {
             )
           }
         />
-        <h1>First Post</h1>
+        <h1>最初の投稿（first-post.jsに書いています。）</h1>
         <h2>
-          <Link href="/">Back to home</Link>
+          <Link href="/">/に戻ります（first-post.jsに書いています）</Link>
         </h2>
       </Layout>
     </>
